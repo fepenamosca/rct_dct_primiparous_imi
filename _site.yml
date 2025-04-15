@@ -1,0 +1,15 @@
+name: "Negatively controlled trial investigating the effect of dry cow therapy in first-lactation dairy cows on the prevalence of intramammary infections in the subsequent lactation"
+header-includes: 
+  \usepackage{graphicx}
+  \usepackage{float}
+output_dir: "docs"
+navbar:
+  title: "Home"
+  right:
+    - text: "Code and output"
+      href: hatch_sdct.html
+    - icon: fa-github fa-lg
+      href: http://github.com/fepenamosca/
+output:  
+   html_document:
+    theme: flatly
