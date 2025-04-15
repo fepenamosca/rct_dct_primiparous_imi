@@ -10,7 +10,7 @@ title: "Negatively controlled trial investigating the effect of dry cow therapy 
 </div>
 
 <font size="5">
-Research has shown that selective dry cow therapy (DCT) can be implemented in well-managed dairy farms without negatively affecting postpartum udder health and performance. This raises the question of whether DCT is necessary in well-managed farms. Our primary objective was to assess the impact of withholding DCT from cows at the end of their first lactation on postpartum quarter-level intramammary infection (IMI) prevalence. Our secondary objectives were to evaluate the impact of DCT omission on postpartum quarter-level IMI prevalence in subgroups of quarters, stratified by quarter-level somatic cell count (SCC) and California mastitis test (CMT) results at dry-off, and to use those findings to predict the effect of SCC- and CMT-guided selective DCT programs on antibiotic use and udder health
+Research has shown that selective dry cow therapy (DCT) can be implemented in well-managed dairy farms without negatively affecting postpartum udder health and performance. This raises the question of whether DCT is necessary in well-managed farms. Our primary objective was to assess the impact of withholding DCT from cows at the end of their first lactation on postpartum quarter-level intramammary infection (IMI) prevalence. Our secondary objectives were to evaluate the impact of DCT omission on postpartum quarter-level IMI prevalence in subgroups of quarters, stratified by quarter-level somatic cell count (SCC) and California mastitis test (CMT) results at dry-off, and to use those findings to predict the effect of SCC- and CMT-guided selective DCT programs on antibiotic use and udder health.
  </font>
 </div>
 
