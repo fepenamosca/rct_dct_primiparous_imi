@@ -11,7 +11,7 @@
 
 <meta name="author" content="Felipe Pena Mosca" />
 
-<meta name="date" content="2025-04-15" />
+<meta name="date" content="2025-05-30" />
 
 <title>Negatively controlled trial investigating the effect of dry cow therapy in first-lactation dairy cows on the prevalence of intramammary infections in the subsequent lactation</title>
 
@@ -1579,7 +1579,7 @@ border-radius: 0px;
 the effect of dry cow therapy in first-lactation dairy cows on the
 prevalence of intramammary infections in the subsequent lactation</h1>
 <h4 class="author">Felipe Pena Mosca</h4>
-<h4 class="date">2025-04-15</h4>
+<h4 class="date">2025-05-30</h4>
 
 </div>
 
@@ -3831,9 +3831,9 @@ adj_means_model_200$cutoff &lt;- &quot;200,000&quot;
 
 df_p &lt;- as.data.frame(emmeans_2_interaction_scc$contrasts)
 
-p_lscc &lt;- round(subset(df_p,df_p$high_scc_200==0)$p.value,3)
+p_lscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_200 == 0)$p.value)
 
-p_hscc &lt;- round(subset(df_p,df_p$high_scc_200==1)$p.value,3)
+p_hscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_200 == 1)$p.value)
 
 # Estimate confidence intervals (OR)
 
@@ -4000,9 +4000,9 @@ adj_means_model_200_gram_pos$cutoff &lt;- &quot;200,000&quot;
 
 df_p &lt;- as.data.frame(emmeans_3_interaction_scc$contrasts)
 
-p_lscc &lt;- round(subset(df_p,df_p$high_scc_200==0)$p.value,3)
+p_lscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_200 == 0)$p.value)
 
-p_hscc &lt;- round(subset(df_p,df_p$high_scc_200==1)$p.value,3)
+p_hscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_200 == 1)$p.value)
 
 # Estimate confidence intervals (OR)
 
@@ -4172,9 +4172,9 @@ adj_means_model_50$cutoff &lt;- &quot;50,000&quot;
 
 df_p &lt;- as.data.frame(emmeans_2_interaction_scc$contrasts)
 
-p_lscc &lt;- round(subset(df_p,df_p$high_scc_50==0)$p.value,3)
+p_lscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_50 == 0)$p.value)
 
-p_hscc &lt;- round(subset(df_p,df_p$high_scc_50==1)$p.value,3)
+p_hscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_50 == 1)$p.value)
 
 # Estimate confidence intervals (OR)
 
@@ -4340,9 +4340,9 @@ adj_means_model_50_gram_pos$cutoff &lt;- &quot;50,000&quot;
 
 df_p &lt;- as.data.frame(emmeans_3_interaction_scc$contrasts)
 
-p_lscc &lt;- round(subset(df_p,df_p$high_scc_50==0)$p.value,3)
+p_lscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_50 == 0)$p.value)
 
-p_hscc &lt;- round(subset(df_p,df_p$high_scc_50==1)$p.value,3)
+p_hscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_50 == 1)$p.value)
 
 # Estimate confidence intervals (OR)
 
@@ -4513,9 +4513,9 @@ adj_means_model_100$cutoff &lt;- &quot;100,000&quot;
 
 df_p &lt;- as.data.frame(emmeans_2_interaction_scc$contrasts)
 
-p_lscc &lt;- round(subset(df_p,df_p$high_scc_100==0)$p.value,3)
+p_lscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_100 == 0)$p.value)
 
-p_hscc &lt;- round(subset(df_p,df_p$high_scc_100==1)$p.value,3)
+p_hscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_100 == 1)$p.value)
 
 # Estimate confidence intervals (OR)
 
@@ -4681,9 +4681,9 @@ adj_means_model_100_gram_pos$cutoff &lt;- &quot;100,000&quot;
 
 df_p &lt;- as.data.frame(emmeans_3_interaction_scc$contrasts)
 
-p_lscc &lt;- round(subset(df_p,df_p$high_scc_100==0)$p.value,3)
+p_lscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_100 == 0)$p.value)
 
-p_hscc &lt;- round(subset(df_p,df_p$high_scc_100==1)$p.value,3)
+p_hscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_100 == 1)$p.value)
 
 # Estimate confidence intervals (OR)
 
@@ -4853,9 +4853,9 @@ adj_means_model_150$cutoff &lt;- &quot;150,000&quot;
 
 df_p &lt;- as.data.frame(emmeans_2_interaction_scc$contrasts)
 
-p_lscc &lt;- round(subset(df_p,df_p$high_scc_150==0)$p.value,3)
+p_lscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_150 == 0)$p.value)
 
-p_hscc &lt;- round(subset(df_p,df_p$high_scc_150==1)$p.value,3)
+p_hscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_150 == 1)$p.value)
 
 # Estimate confidence intervals (OR)
 
@@ -5022,9 +5022,9 @@ adj_means_model_150_gram_pos$cutoff &lt;- &quot;150,000&quot;
 
 df_p &lt;- as.data.frame(emmeans_3_interaction_scc$contrasts)
 
-p_lscc &lt;- round(subset(df_p,df_p$high_scc_150==0)$p.value,3)
+p_lscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_150 == 0)$p.value)
 
-p_hscc &lt;- round(subset(df_p,df_p$high_scc_150==1)$p.value,3)
+p_hscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_150 == 1)$p.value)
 
 # Estimate confidence intervals (OR)
 
@@ -5194,9 +5194,9 @@ adj_means_model_400$cutoff &lt;- &quot;400,000&quot;
 
 df_p &lt;- as.data.frame(emmeans_2_interaction_scc$contrasts)
 
-p_lscc &lt;- round(subset(df_p,df_p$high_scc_400==0)$p.value,3)
+p_lscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_400 == 0)$p.value)
 
-p_hscc &lt;- round(subset(df_p,df_p$high_scc_400==1)$p.value,3)
+p_hscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_400 == 1)$p.value)
 
 # Estimate confidence intervals (OR)
 
@@ -5362,9 +5362,9 @@ adj_means_model_400_gram_pos$cutoff &lt;- &quot;400,000&quot;
 
 df_p &lt;- as.data.frame(emmeans_3_interaction_scc$contrasts)
 
-p_lscc &lt;- round(subset(df_p,df_p$high_scc_400==0)$p.value,3)
+p_lscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_400 == 0)$p.value)
 
-p_hscc &lt;- round(subset(df_p,df_p$high_scc_400==1)$p.value,3)
+p_hscc &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_scc_400 == 1)$p.value)
 
 # Estimate confidence intervals (OR)
 
@@ -5534,9 +5534,9 @@ adj_means_model_cmt_trace$cutoff &lt;- &quot;cmt_trace&quot;
 
 df_p &lt;- as.data.frame(emmeans_4_interaction_cmt$contrasts)
 
-p_lcmt &lt;- round(subset(df_p,df_p$high_cmt==0)$p.value,3)
+p_lcmt &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_cmt == 0)$p.value)
 
-p_hcmt &lt;- round(subset(df_p,df_p$high_cmt==1)$p.value,3)
+p_hcmt &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_cmt == 1)$p.value)
 
 # Estimate confidence intervals (OR)
 
@@ -5704,9 +5704,9 @@ adj_means_model_cmt_trace_gram_pos$cutoff &lt;- &quot;cmt_trace&quot;
 
 df_p &lt;- as.data.frame(emmeans_4_interaction_cmt$contrasts)
 
-p_lcmt &lt;- round(subset(df_p,df_p$high_cmt==0)$p.value,3)
+p_lcmt &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_cmt == 0)$p.value)
 
-p_hcmt &lt;- round(subset(df_p,df_p$high_cmt==1)$p.value,3)
+p_hcmt &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_cmt == 1)$p.value)
 
 # Estimate confidence intervals (OR)
 
@@ -5876,9 +5876,9 @@ adj_means_model_cmt_positive$cutoff &lt;- &quot;cmt_positive&quot;
 
 df_p &lt;- as.data.frame(emmeans_4_interaction_cmt$contrasts)
 
-p_lcmt &lt;- round(subset(df_p,df_p$high_cmt_positive==0)$p.value,3)
+p_lcmt &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_cmt_positive == 0)$p.value)
 
-p_hcmt &lt;- round(subset(df_p,df_p$high_cmt_positive==1)$p.value,3)
+p_hcmt &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_cmt_positive == 1)$p.value)
 
 # Estimate confidence intervals (OR)
 
@@ -6047,9 +6047,9 @@ adj_means_model_cmt_positive_gram_pos$cutoff &lt;- &quot;cmt_positive&quot;
 
 df_p &lt;- as.data.frame(emmeans_4_interaction_cmt$contrasts)
 
-p_lcmt &lt;- round(subset(df_p,df_p$high_cmt_positive==0)$p.value,3)
+p_lcmt &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_cmt_positive == 0)$p.value)
 
-p_hcmt &lt;- round(subset(df_p,df_p$high_cmt_positive==1)$p.value,3)
+p_hcmt &lt;- sprintf(&quot;%.3f&quot;, subset(df_p, df_p$high_cmt_positive == 1)$p.value)
 
 # Estimate confidence intervals (OR)
 
@@ -6158,9 +6158,8 @@ hcmt_df_gram_pos_imi_positive</code></pre>
 
 hscc_df_50_table &lt;- as.data.frame(table(df$treatment,df$imi,df$scc&gt;50)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_imi=(Freq/Total)*100) %&gt;% ungroup()
 
-#hscc_df_50_table$Var3 &lt;- as.factor(hscc_df_50_table$Var3)
 
-hscc_df_50_table$n_perc &lt;- paste0(round(hscc_df_50_table$perc_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_50_table$Freq,&quot;/&quot;,hscc_df_50_table$Total,&quot;)&quot;)
+hscc_df_50_table$n_perc &lt;- paste0(sprintf(&quot;%.1f&quot;, hscc_df_50_table$perc_imi), &quot;%&quot;,&quot; (&quot;,hscc_df_50_table$Freq,&quot;/&quot;,hscc_df_50_table$Total,&quot;)&quot;)
 
 hscc_df_50_table &lt;- hscc_df_50_table %&gt;%
   mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
@@ -6172,13 +6171,11 @@ hscc_df_50_table_3 &lt;- hscc_df_50_table_2 %&gt;%
 
 hscc_df_50_table_3$cutoff &lt;- ifelse(hscc_df_50_table_3$scc_group==&quot;high_scc&quot;,&quot;&gt; 50,000&quot;,&quot;≤ 50,000&quot;)
 
-
 # Table 100
-
 
 hscc_df_100_table &lt;- as.data.frame(table(df$treatment,df$imi,df$scc&gt;100)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_imi=(Freq/Total)*100) %&gt;% ungroup()
 
-hscc_df_100_table$n_perc &lt;- paste0(round(hscc_df_100_table$perc_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_100_table$Freq,&quot;/&quot;,hscc_df_100_table$Total,&quot;)&quot;)
+hscc_df_100_table$n_perc &lt;- paste0(sprintf(&quot;%.1f&quot;, hscc_df_100_table$perc_imi), &quot;%&quot;,&quot; (&quot;,hscc_df_100_table$Freq,&quot;/&quot;,hscc_df_100_table$Total,&quot;)&quot;)
 
 hscc_df_100_table &lt;- hscc_df_100_table %&gt;%
   mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
@@ -6196,7 +6193,7 @@ hscc_df_100_table_3$cutoff &lt;- ifelse(hscc_df_100_table_3$scc_group==&quot;hig
 
 hscc_df_150_table &lt;- as.data.frame(table(df$treatment,df$imi,df$scc&gt;150)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_imi=(Freq/Total)*100) %&gt;% ungroup()
 
-hscc_df_150_table$n_perc &lt;- paste0(round(hscc_df_150_table$perc_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_150_table$Freq,&quot;/&quot;,hscc_df_150_table$Total,&quot;)&quot;)
+hscc_df_150_table$n_perc &lt;- paste0(sprintf(&quot;%.1f&quot;, hscc_df_150_table$perc_imi), &quot;%&quot;,&quot; (&quot;,hscc_df_150_table$Freq,&quot;/&quot;,hscc_df_150_table$Total,&quot;)&quot;)
 
 hscc_df_150_table &lt;- hscc_df_150_table %&gt;%
   mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
@@ -6212,7 +6209,7 @@ hscc_df_150_table_3$cutoff &lt;- ifelse(hscc_df_150_table_3$scc_group==&quot;hig
 
 hscc_df_200_table &lt;- as.data.frame(table(df$treatment,df$imi,df$scc&gt;200)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_imi=(Freq/Total)*100) %&gt;% ungroup()
 
-hscc_df_200_table$n_perc &lt;- paste0(round(hscc_df_200_table$perc_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_200_table$Freq,&quot;/&quot;,hscc_df_200_table$Total,&quot;)&quot;)
+hscc_df_200_table$n_perc &lt;- paste0(sprintf(&quot;%.1f&quot;, hscc_df_200_table$perc_imi), &quot;%&quot;,&quot; (&quot;,hscc_df_200_table$Freq,&quot;/&quot;,hscc_df_200_table$Total,&quot;)&quot;)
 
 hscc_df_200_table &lt;- hscc_df_200_table %&gt;%
   mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
@@ -6224,12 +6221,11 @@ hscc_df_200_table_3 &lt;- hscc_df_200_table_2 %&gt;%
 
 hscc_df_200_table_3$cutoff &lt;- ifelse(hscc_df_200_table_3$scc_group==&quot;high_scc&quot;,&quot;&gt; 200,000&quot;,&quot;≤ 200,000&quot;)
 
-
 # Table 400
 
 hscc_df_400_table &lt;- as.data.frame(table(df$treatment,df$imi,df$scc&gt;400)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_imi=(Freq/Total)*100) %&gt;% ungroup()
 
-hscc_df_400_table$n_perc &lt;- paste0(round(hscc_df_400_table$perc_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_400_table$Freq,&quot;/&quot;,hscc_df_400_table$Total,&quot;)&quot;)
+hscc_df_400_table$n_perc &lt;- paste0(sprintf(&quot;%.1f&quot;, hscc_df_400_table$perc_imi), &quot;%&quot;,&quot; (&quot;,hscc_df_400_table$Freq,&quot;/&quot;,hscc_df_400_table$Total,&quot;)&quot;)
 
 hscc_df_400_table &lt;- hscc_df_400_table %&gt;%
   mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
@@ -6241,33 +6237,11 @@ hscc_df_400_table_3 &lt;- hscc_df_400_table_2 %&gt;%
 
 hscc_df_400_table_3$cutoff &lt;- ifelse(hscc_df_400_table_3$scc_group==&quot;high_scc&quot;,&quot;&gt; 400,000&quot;,&quot;≤ 400,000&quot;)
 
-# Table 800
-
-hscc_df_800_table &lt;- as.data.frame(table(df$treatment,df$imi,df$scc&gt;800)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_imi=(Freq/Total)*100) %&gt;% ungroup()
-
-hscc_df_800_table$n_perc &lt;- paste0(round(hscc_df_800_table$perc_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_800_table$Freq,&quot;/&quot;,hscc_df_800_table$Total,&quot;)&quot;)
-
-hscc_df_800_table &lt;- hscc_df_800_table %&gt;%
-  mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
-
-hscc_df_800_table_2 &lt;- hscc_df_800_table %&gt;% select(c(Var1,scc_group,n_perc)) %&gt;% rename(&quot;treatment&quot;=Var1)
-
-hscc_df_800_table_3 &lt;- hscc_df_800_table_2 %&gt;% 
-  pivot_wider(id_cols=scc_group,names_from = treatment, values_from = n_perc)
-
-hscc_df_800_table_3$cutoff &lt;- ifelse(hscc_df_800_table_3$scc_group==&quot;high_scc&quot;,&quot;&gt; 800,000&quot;,&quot;≤ 800,000&quot;)
-
-
-
-
-imi_tables &lt;- rbind(hscc_df_50_table_3,hscc_df_100_table_3,hscc_df_150_table_3,hscc_df_200_table_3,hscc_df_400_table_3,hscc_df_800_table_3)
-
+imi_tables &lt;- rbind(hscc_df_50_table_3,hscc_df_100_table_3,hscc_df_150_table_3,hscc_df_200_table_3,hscc_df_400_table_3)
 
 hscc_tables &lt;- imi_tables %&gt;% filter(scc_group ==&quot;high_scc&quot;) %&gt;% select(!c(scc_group))
 
-
 lscc_tables &lt;- imi_tables %&gt;% filter(scc_group ==&quot;low_scc&quot;) %&gt;% select(!c(scc_group))
-
 
 # -- gram_pos_imi ----
 
@@ -6275,22 +6249,7 @@ lscc_tables &lt;- imi_tables %&gt;% filter(scc_group ==&quot;low_scc&quot;) %&gt
 
 hscc_df_gram_pos_imi_50_table &lt;- as.data.frame(table(df$treatment,df$gram_pos_imi,df$scc&gt;50)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_gram_pos_imi=(Freq/Total)*100) %&gt;% ungroup()
 
-#hsc_df_gram_pos_imi_50_table$Var3 &lt;- as.factor(hsc_df_gram_pos_imi_50_table$Var3)
-
-hscc_df_gram_pos_imi_50_table$n_perc &lt;- paste0(round(hscc_df_gram_pos_imi_50_table$perc_gram_pos_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_50_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_50_table$Total,&quot;)&quot;)
-
-hscc_df_gram_pos_imi_50_table &lt;- hscc_df_gram_pos_imi_50_table %&gt;%
-  mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
-
-hscc_df_gram_pos_imi_50_table_2 &lt;- hscc_df_gram_pos_imi_50_table %&gt;% select(c(Var1,scc_group,n_perc)) %&gt;% rename(&quot;treatment&quot;=Var1)
-
-hscc_df_gram_pos_imi_50_table_3 &lt;- hscc_df_gram_pos_imi_50_table_2 %&gt;% 
-  pivot_wider(id_cols=scc_group,names_from = treatment, values_from = n_perc)
-
-
-hscc_df_gram_pos_imi_50_table &lt;- as.data.frame(table(df$treatment,df$gram_pos_imi,df$scc&gt;50)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_gram_pos_imi=(Freq/Total)*100) %&gt;% ungroup()
-
-hscc_df_gram_pos_imi_50_table$n_perc &lt;- paste0(round(hscc_df_gram_pos_imi_50_table$perc_gram_pos_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_50_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_50_table$Total,&quot;)&quot;)
+hscc_df_gram_pos_imi_50_table$n_perc &lt;- paste0(sprintf(&quot;%.1f&quot;, hscc_df_gram_pos_imi_50_table$perc_gram_pos_imi), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_50_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_50_table$Total,&quot;)&quot;)
 
 hscc_df_gram_pos_imi_50_table &lt;- hscc_df_gram_pos_imi_50_table %&gt;%
   mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
@@ -6306,20 +6265,7 @@ hscc_df_gram_pos_imi_50_table_3$cutoff &lt;- ifelse(hscc_df_gram_pos_imi_50_tabl
 
 hscc_df_gram_pos_imi_100_table &lt;- as.data.frame(table(df$treatment,df$gram_pos_imi,df$scc&gt;100)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_gram_pos_imi=(Freq/Total)*100) %&gt;% ungroup()
 
-hscc_df_gram_pos_imi_100_table$n_perc &lt;- paste0(round(hscc_df_gram_pos_imi_100_table$perc_gram_pos_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_100_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_100_table$Total,&quot;)&quot;)
-
-hscc_df_gram_pos_imi_100_table &lt;- hscc_df_gram_pos_imi_100_table %&gt;%
-  mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
-
-hscc_df_gram_pos_imi_100_table_2 &lt;- hscc_df_gram_pos_imi_100_table %&gt;% select(c(Var1,scc_group,n_perc)) %&gt;% rename(&quot;treatment&quot;=Var1)
-
-hscc_df_gram_pos_imi_100_table_3 &lt;- hscc_df_gram_pos_imi_100_table_2 %&gt;% 
-  pivot_wider(id_cols=scc_group,names_from = treatment, values_from = n_perc)
-
-
-hscc_df_gram_pos_imi_100_table &lt;- as.data.frame(table(df$treatment,df$gram_pos_imi,df$scc&gt;100)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_gram_pos_imi=(Freq/Total)*100) %&gt;% ungroup()
-
-hscc_df_gram_pos_imi_100_table$n_perc &lt;- paste0(round(hscc_df_gram_pos_imi_100_table$perc_gram_pos_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_100_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_100_table$Total,&quot;)&quot;)
+hscc_df_gram_pos_imi_100_table$n_perc &lt;- paste0(sprintf(&quot;%.1f&quot;, hscc_df_gram_pos_imi_100_table$perc_gram_pos_imi), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_100_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_100_table$Total,&quot;)&quot;)
 
 hscc_df_gram_pos_imi_100_table &lt;- hscc_df_gram_pos_imi_100_table %&gt;%
   mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
@@ -6331,26 +6277,11 @@ hscc_df_gram_pos_imi_100_table_3 &lt;- hscc_df_gram_pos_imi_100_table_2 %&gt;%
 
 hscc_df_gram_pos_imi_100_table_3$cutoff &lt;- ifelse(hscc_df_gram_pos_imi_100_table_3$scc_group==&quot;high_scc&quot;,&quot;&gt; 100,000&quot;,&quot;≤ 100,000&quot;)
 
-
 # Table 150
 
-
 hscc_df_gram_pos_imi_150_table &lt;- as.data.frame(table(df$treatment,df$gram_pos_imi,df$scc&gt;150)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_gram_pos_imi=(Freq/Total)*100) %&gt;% ungroup()
 
-hscc_df_gram_pos_imi_150_table$n_perc &lt;- paste0(round(hscc_df_gram_pos_imi_150_table$perc_gram_pos_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_150_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_150_table$Total,&quot;)&quot;)
-
-hscc_df_gram_pos_imi_150_table &lt;- hscc_df_gram_pos_imi_150_table %&gt;%
-  mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
-
-hscc_df_gram_pos_imi_150_table_2 &lt;- hscc_df_gram_pos_imi_150_table %&gt;% select(c(Var1,scc_group,n_perc)) %&gt;% rename(&quot;treatment&quot;=Var1)
-
-hscc_df_gram_pos_imi_150_table_3 &lt;- hscc_df_gram_pos_imi_150_table_2 %&gt;% 
-  pivot_wider(id_cols=scc_group,names_from = treatment, values_from = n_perc)
-
-
-hscc_df_gram_pos_imi_150_table &lt;- as.data.frame(table(df$treatment,df$gram_pos_imi,df$scc&gt;150)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_gram_pos_imi=(Freq/Total)*100) %&gt;% ungroup()
-
-hscc_df_gram_pos_imi_150_table$n_perc &lt;- paste0(round(hscc_df_gram_pos_imi_150_table$perc_gram_pos_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_150_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_150_table$Total,&quot;)&quot;)
+hscc_df_gram_pos_imi_150_table$n_perc &lt;- paste0(sprintf(&quot;%.1f&quot;, hscc_df_gram_pos_imi_150_table$perc_gram_pos_imi), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_150_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_150_table$Total,&quot;)&quot;)
 
 hscc_df_gram_pos_imi_150_table &lt;- hscc_df_gram_pos_imi_150_table %&gt;%
   mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
@@ -6367,20 +6298,7 @@ hscc_df_gram_pos_imi_150_table_3$cutoff &lt;- ifelse(hscc_df_gram_pos_imi_150_ta
 
 hscc_df_gram_pos_imi_200_table &lt;- as.data.frame(table(df$treatment,df$gram_pos_imi,df$scc&gt;200)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_gram_pos_imi=(Freq/Total)*100) %&gt;% ungroup()
 
-hscc_df_gram_pos_imi_200_table$n_perc &lt;- paste0(round(hscc_df_gram_pos_imi_200_table$perc_gram_pos_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_200_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_200_table$Total,&quot;)&quot;)
-
-hscc_df_gram_pos_imi_200_table &lt;- hscc_df_gram_pos_imi_200_table %&gt;%
-  mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
-
-hscc_df_gram_pos_imi_200_table_2 &lt;- hscc_df_gram_pos_imi_200_table %&gt;% select(c(Var1,scc_group,n_perc)) %&gt;% rename(&quot;treatment&quot;=Var1)
-
-hscc_df_gram_pos_imi_200_table_3 &lt;- hscc_df_gram_pos_imi_200_table_2 %&gt;% 
-  pivot_wider(id_cols=scc_group,names_from = treatment, values_from = n_perc)
-
-
-hscc_df_gram_pos_imi_200_table &lt;- as.data.frame(table(df$treatment,df$gram_pos_imi,df$scc&gt;200)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_gram_pos_imi=(Freq/Total)*100) %&gt;% ungroup()
-
-hscc_df_gram_pos_imi_200_table$n_perc &lt;- paste0(round(hscc_df_gram_pos_imi_200_table$perc_gram_pos_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_200_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_200_table$Total,&quot;)&quot;)
+hscc_df_gram_pos_imi_200_table$n_perc &lt;- paste0(sprintf(&quot;%.1f&quot;, hscc_df_gram_pos_imi_200_table$perc_gram_pos_imi), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_200_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_200_table$Total,&quot;)&quot;)
 
 hscc_df_gram_pos_imi_200_table &lt;- hscc_df_gram_pos_imi_200_table %&gt;%
   mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
@@ -6396,7 +6314,7 @@ hscc_df_gram_pos_imi_200_table_3$cutoff &lt;- ifelse(hscc_df_gram_pos_imi_200_ta
 
 hscc_df_gram_pos_imi_400_table &lt;- as.data.frame(table(df$treatment,df$gram_pos_imi,df$scc&gt;400)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_gram_pos_imi=(Freq/Total)*100) %&gt;% ungroup()
 
-hscc_df_gram_pos_imi_400_table$n_perc &lt;- paste0(round(hscc_df_gram_pos_imi_400_table$perc_gram_pos_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_400_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_400_table$Total,&quot;)&quot;)
+hscc_df_gram_pos_imi_400_table$n_perc &lt;- paste0(sprintf(&quot;%.1f&quot;, hscc_df_gram_pos_imi_400_table$perc_gram_pos_imi), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_400_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_400_table$Total,&quot;)&quot;)
 
 hscc_df_gram_pos_imi_400_table &lt;- hscc_df_gram_pos_imi_400_table %&gt;%
   mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
@@ -6405,60 +6323,12 @@ hscc_df_gram_pos_imi_400_table_2 &lt;- hscc_df_gram_pos_imi_400_table %&gt;% sel
 
 hscc_df_gram_pos_imi_400_table_3 &lt;- hscc_df_gram_pos_imi_400_table_2 %&gt;% 
   pivot_wider(id_cols=scc_group,names_from = treatment, values_from = n_perc)
-
-
-hscc_df_gram_pos_imi_400_table &lt;- as.data.frame(table(df$treatment,df$gram_pos_imi,df$scc&gt;400)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_gram_pos_imi=(Freq/Total)*100) %&gt;% ungroup()
-
-hscc_df_gram_pos_imi_400_table$n_perc &lt;- paste0(round(hscc_df_gram_pos_imi_400_table$perc_gram_pos_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_400_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_400_table$Total,&quot;)&quot;)
-
-hscc_df_gram_pos_imi_400_table &lt;- hscc_df_gram_pos_imi_400_table %&gt;%
-  mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
-
-hscc_df_gram_pos_imi_400_table_2 &lt;- hscc_df_gram_pos_imi_400_table %&gt;% select(c(Var1,scc_group,n_perc)) %&gt;% rename(&quot;treatment&quot;=Var1)
-
-hscc_df_gram_pos_imi_400_table_3 &lt;- hscc_df_gram_pos_imi_400_table_2 %&gt;% 
-  pivot_wider(id_cols=scc_group,names_from = treatment, values_from = n_perc)
-
 
 hscc_df_gram_pos_imi_400_table_3$cutoff &lt;- ifelse(hscc_df_gram_pos_imi_400_table_3$scc_group==&quot;high_scc&quot;,&quot;&gt; 400,000&quot;,&quot;≤ 400,000&quot;)
 
-
-# Table 800
-
-hscc_df_gram_pos_imi_800_table &lt;- as.data.frame(table(df$treatment,df$gram_pos_imi,df$scc&gt;800)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_gram_pos_imi=(Freq/Total)*100) %&gt;% ungroup()
-
-hscc_df_gram_pos_imi_800_table$n_perc &lt;- paste0(round(hscc_df_gram_pos_imi_800_table$perc_gram_pos_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_800_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_800_table$Total,&quot;)&quot;)
-
-hscc_df_gram_pos_imi_800_table &lt;- hscc_df_gram_pos_imi_800_table %&gt;%
-  mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
-
-hscc_df_gram_pos_imi_800_table_2 &lt;- hscc_df_gram_pos_imi_800_table %&gt;% select(c(Var1,scc_group,n_perc)) %&gt;% rename(&quot;treatment&quot;=Var1)
-
-hscc_df_gram_pos_imi_800_table_3 &lt;- hscc_df_gram_pos_imi_800_table_2 %&gt;% 
-  pivot_wider(id_cols=scc_group,names_from = treatment, values_from = n_perc)
-
-
-hscc_df_gram_pos_imi_800_table &lt;- as.data.frame(table(df$treatment,df$gram_pos_imi,df$scc&gt;800)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_gram_pos_imi=(Freq/Total)*100) %&gt;% ungroup()
-
-hscc_df_gram_pos_imi_800_table$n_perc &lt;- paste0(round(hscc_df_gram_pos_imi_800_table$perc_gram_pos_imi,1), &quot;%&quot;,&quot; (&quot;,hscc_df_gram_pos_imi_800_table$Freq,&quot;/&quot;,hscc_df_gram_pos_imi_800_table$Total,&quot;)&quot;)
-
-hscc_df_gram_pos_imi_800_table &lt;- hscc_df_gram_pos_imi_800_table %&gt;%
-  mutate(scc_group = ifelse(Var3==TRUE, &quot;high_scc&quot;, &quot;low_scc&quot;))
-
-hscc_df_gram_pos_imi_800_table_2 &lt;- hscc_df_gram_pos_imi_800_table %&gt;% select(c(Var1,scc_group,n_perc)) %&gt;% rename(&quot;treatment&quot;=Var1)
-
-hscc_df_gram_pos_imi_800_table_3 &lt;- hscc_df_gram_pos_imi_800_table_2 %&gt;% 
-  pivot_wider(id_cols=scc_group,names_from = treatment, values_from = n_perc)
-
-hscc_df_gram_pos_imi_800_table_3$cutoff &lt;- ifelse(hscc_df_gram_pos_imi_800_table_3$scc_group==&quot;high_scc&quot;,&quot;&gt; 800,000&quot;,&quot;≤ 800,000&quot;)
-
-
-
-gram_pos_imi_tables &lt;- rbind(hscc_df_gram_pos_imi_50_table_3,hscc_df_gram_pos_imi_100_table_3,hscc_df_gram_pos_imi_150_table_3,hscc_df_gram_pos_imi_200_table_3,hscc_df_gram_pos_imi_400_table_3,hscc_df_gram_pos_imi_800_table_3)
-
+gram_pos_imi_tables &lt;- rbind(hscc_df_gram_pos_imi_50_table_3,hscc_df_gram_pos_imi_100_table_3,hscc_df_gram_pos_imi_150_table_3,hscc_df_gram_pos_imi_200_table_3,hscc_df_gram_pos_imi_400_table_3)
 
 hscc_gram_pos_imi_tables &lt;- gram_pos_imi_tables %&gt;% filter(scc_group ==&quot;high_scc&quot;) %&gt;% select(!c(scc_group))
-
 
 lscc_gram_pos_imi_tables &lt;- gram_pos_imi_tables %&gt;% filter(scc_group ==&quot;low_scc&quot;) %&gt;% select(!c(scc_group))
 
@@ -6470,23 +6340,21 @@ hscc_models$order &lt;- rownames(hscc_models)
 lscc_models &lt;- rbind(lscc_df_50,lscc_df_100,lscc_df_150,lscc_df_200,lscc_df_400)
 lscc_models$order &lt;- rownames(lscc_models)
 
-
 hscc_models_table &lt;- hscc_models %&gt;% left_join(hscc_tables,by=&quot;cutoff&quot;)
 
 lscc_models_table &lt;- lscc_models %&gt;% left_join(lscc_tables,by=&quot;cutoff&quot;)
 
-
 hscc_models_table &lt;- hscc_models_table %&gt;% rename(&quot;mean&quot;=estimate)
+
 lscc_models_table &lt;- lscc_models_table %&gt;% rename(&quot;mean&quot;=estimate)
 
-hscc_models_table$rr_ci &lt;- paste0(round(hscc_models_table$mean,2),&quot; (&quot;,round(hscc_models_table$lower,2),&quot;, &quot;,round(hscc_models_table$upper,2),&quot;)&quot;)
+hscc_models_table$rr_ci &lt;- paste0(sprintf(&quot;%.2f&quot;, hscc_models_table$mean), &quot; (&quot;, sprintf(&quot;%.2f&quot;, hscc_models_table$lower), &quot;, &quot;, sprintf(&quot;%.2f&quot;, hscc_models_table$upper), &quot;)&quot;)
 
-lscc_models_table$rr_ci &lt;- paste0(round(lscc_models_table$mean,2),&quot; (&quot;,round(lscc_models_table$lower,2),&quot;, &quot;,round(lscc_models_table$upper,2),&quot;)&quot;)
+lscc_models_table$rr_ci &lt;- paste0(sprintf(&quot;%.2f&quot;, lscc_models_table$mean), &quot; (&quot;, sprintf(&quot;%.2f&quot;, lscc_models_table$lower), &quot;, &quot;, sprintf(&quot;%.2f&quot;, lscc_models_table$upper), &quot;)&quot;)
 
 scc_models &lt;- rbind(lscc_models_table,hscc_models_table)
 
 # Bind models
-
 
 model_50 &lt;- scc_models %&gt;% filter(order==&quot;1&quot;)
 model_100 &lt;- scc_models %&gt;% filter(order==&quot;2&quot;)
@@ -6499,39 +6367,27 @@ hscc_gram_pos_imi_models &lt;- rbind(hscc_df_gram_pos_imi_50,hscc_df_gram_pos_im
 hscc_gram_pos_imi_models$order &lt;- rownames(hscc_gram_pos_imi_models)
 
 lscc_gram_pos_imi_models &lt;- rbind(lscc_df_gram_pos_imi_50,lscc_df_gram_pos_imi_100,lscc_df_gram_pos_imi_150,lscc_df_gram_pos_imi_200,lscc_df_gram_pos_imi_400)
+
 lscc_gram_pos_imi_models$order &lt;- rownames(lscc_gram_pos_imi_models)
 
 hscc_gram_pos_imi_models_table &lt;- hscc_gram_pos_imi_models %&gt;% left_join(hscc_gram_pos_imi_tables,by=&quot;cutoff&quot;)
 
 lscc_gram_pos_imi_models_table &lt;- lscc_gram_pos_imi_models %&gt;% left_join(lscc_gram_pos_imi_tables,by=&quot;cutoff&quot;)
 
-library(tidyverse)
 hscc_gram_pos_imi_models_table &lt;- hscc_gram_pos_imi_models_table %&gt;% rename(&quot;mean&quot;=estimate)
 lscc_gram_pos_imi_models_table &lt;- lscc_gram_pos_imi_models_table %&gt;% rename(&quot;mean&quot;=estimate)
 
-hscc_gram_pos_imi_models_table$rr_ci &lt;- paste0(round(hscc_gram_pos_imi_models_table$mean,2),&quot; (&quot;,round(hscc_gram_pos_imi_models_table$lower,2),&quot;, &quot;,round(hscc_gram_pos_imi_models_table$upper,2),&quot;)&quot;)
-lscc_gram_pos_imi_models_table$rr_ci &lt;- paste0(round(lscc_gram_pos_imi_models_table$mean,2),&quot; (&quot;,round(lscc_gram_pos_imi_models_table$lower,2),&quot;, &quot;,round(lscc_gram_pos_imi_models_table$upper,2),&quot;)&quot;)
-str(lscc_gram_pos_imi_models_table)</code></pre>
-<pre><code>## &#39;data.frame&#39;:    5 obs. of  9 variables:
-##  $ mean    : num  0.964 1.163 1.109 1.176 1.148
-##  $ lower   : num  0.509 0.784 0.789 0.858 0.86
-##  $ upper   : num  1.72 1.67 1.53 1.58 1.51
-##  $ p_value : num  0.906 0.444 0.545 0.307 0.342
-##  $ cutoff  : chr  &quot;≤ 50,000&quot; &quot;≤ 100,000&quot; &quot;≤ 150,000&quot; &quot;≤ 200,000&quot; ...
-##  $ order   : chr  &quot;1&quot; &quot;2&quot; &quot;3&quot; &quot;4&quot; ...
-##  $ ATB+ITS : chr  &quot;16.2% (25/154)&quot; &quot;16.4% (57/348)&quot; &quot;17.1% (84/491)&quot; &quot;16% (89/556)&quot; ...
-##  $ ITS-only: chr  &quot;15.4% (22/143)&quot; &quot;18.4% (66/359)&quot; &quot;18.6% (90/485)&quot; &quot;18.7% (103/551)&quot; ...
-##  $ rr_ci   : chr  &quot;0.96 (0.51, 1.72)&quot; &quot;1.16 (0.78, 1.67)&quot; &quot;1.11 (0.79, 1.53)&quot; &quot;1.18 (0.86, 1.58)&quot; ...</code></pre>
-<pre class="r"><code>scc_models_gram_pos_imi &lt;- rbind(lscc_gram_pos_imi_models_table,hscc_gram_pos_imi_models_table)
+hscc_gram_pos_imi_models_table$rr_ci &lt;- paste0(sprintf(&quot;%.2f&quot;, hscc_gram_pos_imi_models_table$mean), &quot; (&quot;, sprintf(&quot;%.2f&quot;, hscc_gram_pos_imi_models_table$lower), &quot;, &quot;, sprintf(&quot;%.2f&quot;, hscc_gram_pos_imi_models_table$upper), &quot;)&quot;)
 
+lscc_gram_pos_imi_models_table$rr_ci &lt;- paste0(sprintf(&quot;%.2f&quot;, lscc_gram_pos_imi_models_table$mean), &quot; (&quot;, sprintf(&quot;%.2f&quot;, lscc_gram_pos_imi_models_table$lower), &quot;, &quot;, sprintf(&quot;%.2f&quot;, lscc_gram_pos_imi_models_table$upper), &quot;)&quot;)
+
+scc_models_gram_pos_imi &lt;- rbind(lscc_gram_pos_imi_models_table,hscc_gram_pos_imi_models_table)
 
 model_50_gram_pos_imi&lt;- scc_models_gram_pos_imi %&gt;% filter(order==&quot;1&quot;)
 model_100_gram_pos_imi &lt;- scc_models_gram_pos_imi %&gt;% filter(order==&quot;2&quot;)
 model_150_gram_pos_imi &lt;- scc_models_gram_pos_imi %&gt;% filter(order==&quot;3&quot;)
 model_200_gram_pos_imi &lt;- scc_models_gram_pos_imi %&gt;% filter(order==&quot;4&quot;)
 model_400_gram_pos_imi &lt;- scc_models_gram_pos_imi %&gt;% filter(order==&quot;5&quot;)
-
-
 
 # Create an empty row
 empty_row &lt;- data.frame(
@@ -6722,14 +6578,13 @@ dev.off()</code></pre>
 ##   2</code></pre>
 <pre class="r"><code># --- Plot for CMT ----
 
-
 # any imi
 
 # Table trace
 
 hcmt_df_trace_table &lt;- as.data.frame(table(df$treatment,df$imi,df$high_cmt==1)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_imi=(Freq/Total)*100) %&gt;% ungroup()
 
-hcmt_df_trace_table$n_perc &lt;- paste0(round(hcmt_df_trace_table$perc_imi,1), &quot;%&quot;,&quot; (&quot;,hcmt_df_trace_table$Freq,&quot;/&quot;,hcmt_df_trace_table$Total,&quot;)&quot;)
+hcmt_df_trace_table$n_perc &lt;- paste0(sprintf(&quot;%.1f&quot;, hcmt_df_trace_table$perc_imi), &quot;%&quot;,&quot; (&quot;,hcmt_df_trace_table$Freq,&quot;/&quot;,hcmt_df_trace_table$Total,&quot;)&quot;)
 
 hcmt_df_trace_table &lt;- hcmt_df_trace_table %&gt;%
   mutate(cmt_group = ifelse(Var3==TRUE, &quot;high_cmt&quot;, &quot;low_cmt&quot;))
@@ -6745,7 +6600,7 @@ hcmt_df_trace_table_3$cutoff &lt;- &quot;Trace&quot;
 
 hcmt_df_positive_table &lt;- as.data.frame(table(df$treatment,df$imi,df$high_cmt_positive==1)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_imi=(Freq/Total)*100) %&gt;% ungroup()
 
-hcmt_df_positive_table$n_perc &lt;- paste0(round(hcmt_df_positive_table$perc_imi,1), &quot;%&quot;,&quot; (&quot;,hcmt_df_positive_table$Freq,&quot;/&quot;,hcmt_df_positive_table$Total,&quot;)&quot;)
+hcmt_df_positive_table$n_perc &lt;- paste0(sprintf(&quot;%.1f&quot;, hcmt_df_positive_table$perc_imi), &quot;%&quot;,&quot; (&quot;,hcmt_df_positive_table$Freq,&quot;/&quot;,hcmt_df_positive_table$Total,&quot;)&quot;)
 
 hcmt_df_positive_table &lt;- hcmt_df_positive_table %&gt;%
   mutate(cmt_group = ifelse(Var3==TRUE, &quot;high_cmt&quot;, &quot;low_cmt&quot;))
@@ -6759,13 +6614,13 @@ hcmt_df_positive_table_3$cutoff &lt;- &quot;Positive&quot;
 
 imi_tables_cmt &lt;- rbind(hcmt_df_trace_table_3,hcmt_df_positive_table_3)
 
-
+# gram-positive IMI
 
 # Table trace
 
 hcmt_df_trace_table &lt;- as.data.frame(table(df$treatment,df$gram_pos_imi,df$high_cmt==1)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_imi=(Freq/Total)*100) %&gt;% ungroup()
 
-hcmt_df_trace_table$n_perc &lt;- paste0(round(hcmt_df_trace_table$perc_imi,1), &quot;%&quot;,&quot; (&quot;,hcmt_df_trace_table$Freq,&quot;/&quot;,hcmt_df_trace_table$Total,&quot;)&quot;)
+hcmt_df_trace_table$n_perc &lt;- paste0(sprintf(&quot;%.1f&quot;, hcmt_df_trace_table$perc_imi), &quot;%&quot;,&quot; (&quot;,hcmt_df_trace_table$Freq,&quot;/&quot;,hcmt_df_trace_table$Total,&quot;)&quot;)
 
 hcmt_df_trace_table &lt;- hcmt_df_trace_table %&gt;%
   mutate(cmt_group = ifelse(Var3==TRUE, &quot;high_cmt&quot;, &quot;low_cmt&quot;))
@@ -6781,7 +6636,7 @@ hcmt_df_trace_table_3$cutoff &lt;- &quot;Trace&quot;
 
 hcmt_df_positive_table &lt;- as.data.frame(table(df$treatment,df$gram_pos_imi,df$high_cmt_positive==1)) %&gt;% group_by(Var1,Var3) %&gt;% mutate(Total= sum(Freq)) %&gt;% filter(Var2==1) %&gt;% select(!c(Var2)) %&gt;% mutate(perc_imi=(Freq/Total)*100) %&gt;% ungroup()
 
-hcmt_df_positive_table$n_perc &lt;- paste0(round(hcmt_df_positive_table$perc_imi,1), &quot;%&quot;,&quot; (&quot;,hcmt_df_positive_table$Freq,&quot;/&quot;,hcmt_df_positive_table$Total,&quot;)&quot;)
+hcmt_df_positive_table$n_perc &lt;- paste0(sprintf(&quot;%.1f&quot;, hcmt_df_positive_table$perc_imi), &quot;%&quot;,&quot; (&quot;,hcmt_df_positive_table$Freq,&quot;/&quot;,hcmt_df_positive_table$Total,&quot;)&quot;)
 
 hcmt_df_positive_table &lt;- hcmt_df_positive_table %&gt;%
   mutate(cmt_group = ifelse(Var3==TRUE, &quot;high_cmt&quot;, &quot;low_cmt&quot;))
@@ -6795,20 +6650,15 @@ hcmt_df_positive_table_3$cutoff &lt;- &quot;Positive&quot;
 
 gram_pos_imi_tables_cmt &lt;- rbind(hcmt_df_trace_table_3,hcmt_df_positive_table_3)
 
-
 # subset tables
 
 hcmt_tables &lt;- imi_tables_cmt %&gt;% filter(cmt_group ==&quot;high_cmt&quot;) %&gt;% select(!c(cmt_group))
 
-
 lcmt_tables &lt;- imi_tables_cmt %&gt;% filter(cmt_group ==&quot;low_cmt&quot;) %&gt;% select(!c(cmt_group))
-
 
 hcmt_gram_pos_imi_tables &lt;- gram_pos_imi_tables_cmt %&gt;% filter(cmt_group ==&quot;high_cmt&quot;) %&gt;% select(!c(cmt_group))
 
-
 lcmt_gram_pos_imi_tables &lt;- gram_pos_imi_tables_cmt %&gt;% filter(cmt_group ==&quot;low_cmt&quot;) %&gt;% select(!c(cmt_group))
-
 
 # Models 
 
@@ -6827,17 +6677,15 @@ lcmt_models_table &lt;- lcmt_models %&gt;% left_join(lcmt_tables,by=&quot;cutoff
 hcmt_models_table &lt;- hcmt_models_table %&gt;% rename(&quot;mean&quot;=estimate)
 lcmt_models_table &lt;- lcmt_models_table %&gt;% rename(&quot;mean&quot;=estimate)
 
-hcmt_models_table$rr_ci &lt;- paste0(round(hcmt_models_table$mean,2),&quot; (&quot;,round(hcmt_models_table$lower,2),&quot;, &quot;,round(hcmt_models_table$upper,2),&quot;)&quot;)
-lcmt_models_table$rr_ci &lt;- paste0(round(lcmt_models_table$mean,2),&quot; (&quot;,round(lcmt_models_table$lower,2),&quot;, &quot;,round(lcmt_models_table$upper,2),&quot;)&quot;)
+hcmt_models_table$rr_ci &lt;- paste0(sprintf(&quot;%.2f&quot;, hcmt_models_table$mean), &quot; (&quot;, sprintf(&quot;%.2f&quot;, hcmt_models_table$lower), &quot;, &quot;, sprintf(&quot;%.2f&quot;, hcmt_models_table$upper), &quot;)&quot;)
+
+lcmt_models_table$rr_ci &lt;- paste0(sprintf(&quot;%.2f&quot;, lcmt_models_table$mean), &quot; (&quot;, sprintf(&quot;%.2f&quot;, lcmt_models_table$lower), &quot;, &quot;, sprintf(&quot;%.2f&quot;, lcmt_models_table$upper), &quot;)&quot;)
 
 hcmt_models_table$cutoff &lt;- ifelse(hcmt_models_table$cutoff==&quot;Trace&quot;,&quot;T - 1 to 3&quot;,&quot;1 to 3&quot;)
 
 lcmt_models_table$cutoff &lt;- ifelse(lcmt_models_table$cutoff==&quot;Trace&quot;,&quot;NR&quot;,&quot;NR - T&quot;)
 
 cmt_models &lt;- rbind(lcmt_models_table,hcmt_models_table)
-
-library(tidyverse)
-
 
 model_trace &lt;- cmt_models %&gt;% filter(order==&quot;1&quot;)
 model_positive &lt;- cmt_models %&gt;% filter(order==&quot;2&quot;)
@@ -6855,22 +6703,18 @@ hcmt_gram_pos_imi_models_table &lt;- hcmt_gram_pos_imi_models %&gt;% left_join(h
 
 lcmt_gram_pos_imi_models_table &lt;- lcmt_gram_pos_imi_models %&gt;% left_join(lcmt_gram_pos_imi_tables,by=&quot;cutoff&quot;)
 
-library(tidyverse)
 hcmt_gram_pos_imi_models_table &lt;- hcmt_gram_pos_imi_models_table %&gt;% rename(&quot;mean&quot;=estimate)
 lcmt_gram_pos_imi_models_table &lt;- lcmt_gram_pos_imi_models_table %&gt;% rename(&quot;mean&quot;=estimate)
 
-hcmt_gram_pos_imi_models_table$rr_ci &lt;- paste0(round(hcmt_gram_pos_imi_models_table$mean,2),&quot; (&quot;,round(hcmt_gram_pos_imi_models_table$lower,2),&quot;, &quot;,round(hcmt_gram_pos_imi_models_table$upper,2),&quot;)&quot;)
-lcmt_gram_pos_imi_models_table$rr_ci &lt;- paste0(round(lcmt_gram_pos_imi_models_table$mean,2),&quot; (&quot;,round(lcmt_gram_pos_imi_models_table$lower,2),&quot;, &quot;,round(lcmt_gram_pos_imi_models_table$upper,2),&quot;)&quot;)
+hcmt_gram_pos_imi_models_table$rr_ci &lt;- paste0(sprintf(&quot;%.2f&quot;, hcmt_gram_pos_imi_models_table$mean), &quot; (&quot;, sprintf(&quot;%.2f&quot;, hcmt_gram_pos_imi_models_table$lower), &quot;, &quot;, sprintf(&quot;%.2f&quot;, hcmt_gram_pos_imi_models_table$upper), &quot;)&quot;)
+
+lcmt_gram_pos_imi_models_table$rr_ci &lt;- paste0(sprintf(&quot;%.2f&quot;, lcmt_gram_pos_imi_models_table$mean), &quot; (&quot;, sprintf(&quot;%.2f&quot;, lcmt_gram_pos_imi_models_table$lower), &quot;, &quot;, sprintf(&quot;%.2f&quot;, lcmt_gram_pos_imi_models_table$upper), &quot;)&quot;)
 
 hcmt_gram_pos_imi_models_table$cutoff &lt;- ifelse(hcmt_gram_pos_imi_models_table$cutoff==&quot;Trace&quot;,&quot;T - 1 to 3&quot;,&quot;1 to 3&quot;)
 
 lcmt_gram_pos_imi_models_table$cutoff &lt;- ifelse(lcmt_gram_pos_imi_models_table$cutoff==&quot;Trace&quot;,&quot;NR&quot;,&quot;NR - T&quot;)
 
-
 cmt_models_gram_pos_imi &lt;- rbind(lcmt_gram_pos_imi_models_table,hcmt_gram_pos_imi_models_table)
-
-library(tidyverse)
-
 
 model_trace_gram_pos_imi &lt;- cmt_models_gram_pos_imi %&gt;% filter(order==&quot;1&quot;)
 model_positive_gram_pos_imi &lt;- cmt_models_gram_pos_imi %&gt;% filter(order==&quot;2&quot;)
